@@ -1,18 +1,16 @@
 package ordering
 
 
-func Insertion(param []int){
+func Insertion(arr []int){
     
-    var key,j int
+    for i:=1; i< len(arr);i++{
+        var key,j=arr[i],i-1 
 
-    for i := 1; i < len(param); i++{
-        key=param[i];
-        j=i-1;
-
-        for (j>=0 && param[j]>key){
-            param[j+1]=param[j];
+        for (j>= 0 && arr[j]>key){
+            arr[j+1]=arr[j]
             j-=1
         }
-        param[j+1]=key
+        arr[j+1]=key
     }
+    return
 }
