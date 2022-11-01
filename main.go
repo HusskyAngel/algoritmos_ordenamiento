@@ -6,9 +6,9 @@ import (
 )
 
 func main() {
-    var arr =[...]int{5,6,11,12,13}
-    fmt.Print("hola mundo\n")
-    fmt.Println(ordering.Insertion(arr))
+    var arr =[]int{5,6,11,13,12}
+    ordering.BubbleSort(arr)
+    fmt.Println(arr)
 }
 
 
